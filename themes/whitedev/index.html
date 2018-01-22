@@ -46,7 +46,7 @@
   <!--Custom CSS -->
   <link href="https://testnet.blinktrade.com/assets/themes/whitedev/css/main.demo.css" rel="stylesheet">
 
-  <script data-cfasync="false" src="https://testnet.blinktrade.com/assets/js/bitex_app_blink_trade.compiled.en_US.whitedev.js?v=2def084" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://testnet.blinktrade.com/assets/js/bitex_app_blink_trade.compiled.en_US.whitedev.js?v=7188764" type="text/javascript"></script>
   <script src="https://testnet.blinktrade.com/assets/js/externs/qrcode.min.js"></script>
 </head>
 <body class=" ws-not-connected bitex-not-logged active-view-start ">
@@ -88,8 +88,48 @@
               
                 
                 <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/es">
+                        <span class="flag-icon flag-icon-es"></span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
                     <a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/pt_BR">
                         <span class="flag-icon flag-icon-pt_BR"></span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/ro">
+                        <span class="flag-icon flag-icon-ro"></span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/zn_CN">
+                        <span class="flag-icon flag-icon-zn_CN"></span>
+                    </a>
+                </li>
+                
+              
+            
+              
+                
+                <li role="presentation">
+                    <a role="menuitem" tabindex="-1" href="https://testnet.blinktrade.com/vi">
+                        <span class="flag-icon flag-icon-vi"></span>
                     </a>
                 </li>
                 
@@ -1292,7 +1332,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                       <a href="#">Latency: <span class="bitex-model" data-model-key="latency">0</span> ms</a>
                     </div>
                     <div class="col-md-1 ls-footer-item">
-                      <a href="#">Version: 2def084</a>
+                      <a href="#">Version: 7188764</a>
                     </div>
                     
                     <div class="col-md-2 ls-footer-item">
@@ -1327,7 +1367,7 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
                       <a href="#">Latency: <span class="bitex-model" data-model-key="latency">0</span> ms</a>
                     </div>
                     <div class="col-md-1 ls-footer-item">
-                      <a href="#">Version: 2def084</a>
+                      <a href="#">Version: 7188764</a>
                     </div>
                     
                     <div class="col-md-2 ls-footer-item">
@@ -1366,11 +1406,12 @@ Further more, all the safety measures of the hot wallet are run by blockchain.in
         var country_code = "US";
         var blinktrade_api = "api_testnet.blinktrade.com";
         var symbol = "BTCUSD";
+        var required_level_to_be_a_pro_trader = 0;
 
-        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> BRL',  'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID'  ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCPKR_BEST_BID' ] ] };
+        var remittance_box = { 'BRL':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['Dólar Bitcoin',      'BRL', 'BLINK_BTCBRL_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCBRL_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID'  ], ['Dólar Turismo',      'BRL', 'UOL_USDBRT_BEST_BID / 100000000', 'UOL_USDBRT_BEST_ASK / 100000000' ] ], 'USD':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['BitStampUSD',        'USD', 'BITSTAMP_BTCUSD_BEST_BID / 100000000', 'BITSTAMP_BTCUSD_BEST_ASK / 100000000'  ], ['KrakenUSD',          'USD', 'KRAKEN_BTCUSD_BEST_BID / 100000000', 'KRAKEN_BTCUSD_BEST_ASK / 100000000'  ], ['itBitUSD',           'USD', 'ITBIT_BTCUSD_BEST_BID / 100000000', 'ITBIT_BTCUSD_BEST_ASK / 100000000'  ] ], 'VEF':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCVEF_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> VEF',  'VEF', 'BLINK_BTCVEF_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCVEF_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ], ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'CLP':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCCLP_BEST_ASK /  BITFINEX_BTCUSD_BEST_BID' ] , ['BRL -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCBRL_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCBRL_BEST_BID' ] , ['VEF -> BTC -> CLP',  'CLP', 'BLINK_BTCCLP_BEST_BID /  BLINK_BTCVEF_BEST_ASK',    'BLINK_BTCCLP_BEST_ASK /  BLINK_BTCVEF_BEST_BID' ] ], 'PKR':[ ['BitFinexUSD',        'USD', 'BITFINEX_BTCUSD_BEST_BID / 100000000', 'BITFINEX_BTCUSD_BEST_ASK / 100000000'  ], ['USD -> BTC -> PKR',  'PKR', 'BLINK_BTCPKR_BEST_BID /  BITFINEX_BTCUSD_BEST_ASK', 'BLINK_BTCPKR_BEST_ASK /  BITFINEX_BTCPKR_BEST_BID' ] ] };
 
         _app = new BlinkTradeApp(broker_id, remittance_box,  country_code, symbol);
-        _app.run(blinktrade_api);
+        _app.run(blinktrade_api, required_level_to_be_a_pro_trader);
       })();
     </script>
     
