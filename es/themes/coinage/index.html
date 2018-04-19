@@ -38,15 +38,15 @@
   <script type="text/javascript" src="//apis.google.com/js/plusone.js"></script>
 
   
-  <link href="https://testnet.blinktrade.com/es/assets/themes/default/css/style-new.css?v=549c31e" rel="stylesheet">
+  <link href="https://testnet.blinktrade.com/es/assets/themes/default/css/style-new.css?v=ea45ade" rel="stylesheet">
   <link href="https://testnet.blinktrade.com/es/assets/css/flag-icon.css" rel="stylesheet">
 
   
-    <link href="https://testnet.blinktrade.com/es/assets/themes/coinage/sass/main.coinage.css?v=549c31e" rel="stylesheet">
+    <link href="https://testnet.blinktrade.com/es/assets/themes/coinage/sass/main.coinage.css?v=ea45ade" rel="stylesheet">
   
 
   <link rel="stylesheet" href="https://testnet.blinktrade.com/es/assets/themes/coinage/css/font-awesome.min.css">
-  <script data-cfasync="false" src="https://testnet.blinktrade.com/es/assets/js/bitex_app_blink_trade.compiled.es.coinage.js?v=549c31e" type="text/javascript"></script>
+  <script data-cfasync="false" src="https://testnet.blinktrade.com/es/assets/js/bitex_app_blink_trade.compiled.es.coinage.js?v=ea45ade" type="text/javascript"></script>
   <script src="https://testnet.blinktrade.com/es/assets/themes/coinage/javascript/jquery-1.12.0.min.js"></script>
   <script src="https://testnet.blinktrade.com/es/assets/themes/coinage/javascript/bootstrap.min.js"></script>
   <script src="https://testnet.blinktrade.com/es/assets/js/externs/qrcode.min.js"></script>
@@ -61,7 +61,7 @@
         <!-- .container-fluid -->
         <div class="container">
             <!-- .head-ticker -->
-            <ul class="head-ticker">
+            <ul class="head-ticker bitex-model" data-model-key="IsProTrader" style="display: none" data-model-action="show_element">
                 <li>
                     <span class="head-ticker__title">
                         <i class="glyphicon glyphicon-triangle-right"></i> ÚLTIMO&nbsp;
@@ -115,12 +115,20 @@
 
             <ul class="head-top-nav navbar-right pull-right">
               <!-- .head-market -->
+              <li>
+                
+                <a data-switch-view="faq" href="#" class="head-top-button">
+                  <i class="glyphicon"></i>
+                  Preguntas frecuentes
+                </a>
+                
+              </li>
               <li class="bitex-display-if-logged">
                 <a data-switch-view="trading" href="#" class="head-top-button">
                   <i class="glyphicon glyphicon-random"></i> Negociaciones
                 </a>
               </li>
-              <li>
+              <li class="bitex-model" style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
                 <a data-switch-view="market" href="#" class="head-top-button">
                     <i class="glyphicon glyphicon-stats"></i> Mercado
                 </a>
@@ -1416,8 +1424,8 @@
                   <div class="sidebar-box__body">
                       <div id="id_remittance_box"></div>
                       
-                      <a class="twitter-timeline" href="https://twitter.com/foxbitstatus" data-theme="dark" data-link-color="#E8683E" data-widget-id="717629137503043584">Tweets by @foxbitstatus</a>
-                      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        <a class="twitter-timeline" href="https://twitter.com/foxbitstatus" data-theme="dark" data-link-color="#E8683E" data-widget-id="717629137503043584">Tweets by @foxbitstatus</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
                       
                   </div>
               </div>
@@ -2101,7 +2109,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
                     </li>
                     
                     <li>
-                        Version: 549c31e
+                        Version: ea45ade
                     </li>
                     <li>
                         <a href="https://github.com/blinktrade/" target="_blank">Proudly 100% open source <span class="bitex-model" data-model-key="JSVersion"></span></a>
@@ -2114,7 +2122,7 @@ También podrá revisar su historial de depósitos y retiros median</p>
             <div class="col-sm-4">
                 <h5></h5>
                 <ul>
-                    <li>
+                    <li class="bitex-model" style="display: none" data-model-key="IsProTrader" data-model-action="show_element">
                         <a href="#" data-switch-view="api">API </a>
                     </li>
                     <li>
