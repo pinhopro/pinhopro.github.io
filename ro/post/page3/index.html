@@ -43,8 +43,8 @@
     <link href="https://testnet.blinktrade.com/ro/assets/themes/default/css/Dialog.css" rel="stylesheet">
     <link href="https://testnet.blinktrade.com/ro/assets/themes/default/css/fuelux.css" rel="stylesheet">
     <link href="https://testnet.blinktrade.com/ro/assets/themes/default/css/default.uni-form.css" rel="stylesheet">
-    <link href="https://testnet.blinktrade.com/ro/assets/themes/default/css/style.css?v=3edbc77" rel="stylesheet">
-    <script data-cfasync="false" src="https://testnet.blinktrade.com/ro/assets/js/bitex_app_blink_trade.compiled.ro.default.js?v=3edbc77" type="text/javascript"></script>
+    <link href="https://testnet.blinktrade.com/ro/assets/themes/default/css/style.css?v=9473c3e" rel="stylesheet">
+    <script data-cfasync="false" src="https://testnet.blinktrade.com/ro/assets/js/bitex_app_blink_trade.compiled.ro.default.js?v=9473c3e" type="text/javascript"></script>
     <script src="https://testnet.blinktrade.com/ro/assets/js/externs/qrcode.min.js"></script>
     
   </head>
@@ -410,6 +410,11 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
             <input id="id_second_factor"  placeholder="" name="secondfactor" type="text" autocomplete="off">
           </div>
         </div>
+
+        <p class="bitex-model" style="display: none" data-model-key="HasToken" data-model-action="show_element">
+          <input type="checkbox" id="id_trusted_device" />
+          <label for="id_trusted_device" style="display: inline-block">Încredereți acest dispozitiv timp de 30 de zile</label>
+        </p>
 
         <p>
           <a href="#" id="id_open_second_factor">Has two factor authentication?</a>
@@ -1039,7 +1044,7 @@ Mai mult, toate măsurile de siguranță ale portofelelor calde sunt întreținu
         <p>
           
           Latency: <span class="bitex-model" data-model-key="latency">0</span> ms |
-          Version: 3edbc77 |
+          Version: 9473c3e |
           
 		      <a href="http://blinktrade.com/" target="_blank">© 2014 BlinkTrade Inc</a>
           | <a href="#themes">Themes</a>
